@@ -1,9 +1,9 @@
 # Budget Breakdown Calculator
 
-# Prompt the user to enter their total monthly budget (net income)
+# user to enter their total monthly budget (net income)
 total_budget = float(input("Enter your total monthly budget (net income): "))
 
-# Prompt the user to enter expenses for different categories
+#  enter expenses for different categories
 housing = float(input("Enter your Housing cost: "))
 utilities = float(input("Enter your Utilities cost: "))
 groceries = float(input("Enter your Groceries cost: "))
@@ -20,7 +20,7 @@ def calculate_percentage(amount, total):
     return (amount / total) * 100 if total > 0 else 0
 
 
-# Display the budget breakdown in a user-friendly format
+# Display the budget breakdown
 print("\n--- Budget Breakdown ---")
 print(f"Housing: {calculate_percentage(housing, total_budget):.2f}%")
 print(f"Utilities: {calculate_percentage(utilities, total_budget):.2f}%")
@@ -42,7 +42,7 @@ remaining_budget = total_budget - total_expenses
 print(f"\nTotal Expenses: ${total_expenses:.2f}")
 print(f"Remaining Budget: ${remaining_budget:.2f}")
 
-# Provide a financial health message based on remaining budget
+# a  message based on remaining budget
 if remaining_budget > 0:
     print("Great job! You are within your budget.")
 elif remaining_budget == 0:
