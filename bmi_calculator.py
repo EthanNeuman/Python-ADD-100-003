@@ -5,10 +5,10 @@ INCHES_TO_METERS = 0.0254
 
 def calculate_body_mass_index(weight_pounds, height_inches):
     weight_kilograms = weight_pounds * \
-        POUNDS_TO_KILOGRAMS  # Convert weight to kilograms
-    height_meters = height_inches * INCHES_TO_METERS  # Convert height to meters
+        POUNDS_TO_KILOGRAMS
+    height_meters = height_inches * INCHES_TO_METERS
     body_mass_index = weight_kilograms / \
-        (height_meters * height_meters)  # Calculate BMI
+        (height_meters * height_meters)
     return body_mass_index
 
 
