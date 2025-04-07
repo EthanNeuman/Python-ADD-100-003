@@ -1,4 +1,4 @@
-#  Dictionaries: NATO Phonetic Alphabet Translator
+#  Dictionary nato
 
 def main():
     nato_alphabet = {
