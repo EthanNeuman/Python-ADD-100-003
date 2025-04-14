@@ -1,5 +1,4 @@
 def check_password_criteria(password):
-    """Returns a list of password issues if criteria are not met."""
     issues = []
     if len(password) < 8 or len(password) > 20:
         issues.append("- Password must be between 8 and 20 characters.")
